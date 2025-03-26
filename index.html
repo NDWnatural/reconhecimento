@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Porteiro</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #666;
+}
+
+  </style>
+</head>
+<body>
+  <h2>Reconhecimento Facial</h2>
+  <video id="video" width="640" height="480" autoplay muted></video>
+  <form id="userForm">
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" required><br><br>
+  
+    <label for="name">Nome:</label>
+    <input type="text" id="name" required><br><br>
+  
+    <button type="button" id="registerBtn">Registrar</button>
+  </form>
+  
+  <h2>Reconhecimento Facial</h2>
+  <video id="video" width="640" height="480" autoplay muted></video>
+  
+  
+</body>
+</html>
